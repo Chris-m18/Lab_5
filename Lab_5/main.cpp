@@ -60,7 +60,55 @@ fstream  ~ file stream
  
  
  
- * book design Patterns 
+ {* book design Patterns}
+ 
+ when we check for an error we are really looking at bit flages
+ 
+ 
+ clear function will clear the flag
+ 
+ Stream BIts
+ 
+ ios::eofbit ~ end of stream ends
+ 
+ ios::failbit ~  Set when an attempted operation has failed.
+ 
+ ios::hardfail ~ Set when an unrecoverable error has occurred.
+ 
+ ios::badbit ~ Set when an invalid operation has been
+ attempted.
+
+ ios::goodbit ~ Set when all the flags above are not set.
+ Indicates the stream is in good condition.
+ 
+ eof() ~ Returns true (nonzero) if the eofbit flag is set,
+ otherwise returns false.
+ 
+ fail() ~ Returns true (nonzero) if the failbit or hardfail
+ flags are set, otherwise returns false.
+ 
+ bad() ~ Returns true (nonzero) if the badbit flag is set,
+ otherwise returns false.
+ 
+ good() ~ Returns true (nonzero) if the goodbit flag is set,
+ otherwise returns false.
+ 
+ clear() ~ When called with no arguments, clears all the flags
+ listed above. Can also be called with a specific flag
+ as an argument.
+ 
+ 
+ Cheacking the state of the bit
+ 
+ void showState(fstream &file) {
+ cout << "File Status:\n";
+ cout << " eof bit: " << file.eof() << endl;
+ cout << " fail bit: " << file.fail() << endl;
+ cout << " bad bit: " << file.bad() << endl;
+ cout << " good bit: " << file.good() << endl;
+ file.clear();
+ }
+ 
  
  */
 
