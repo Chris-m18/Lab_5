@@ -5,10 +5,15 @@
 //  Created by Christian Matos on 10/1/22.
 //
 
+/*
+ ~~~~~~~~~~~Class Notes~~~~~~~~~~~~~
+ 
+ 
+ */
+
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+  
     return 0;
 }
