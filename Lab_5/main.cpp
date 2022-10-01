@@ -7,7 +7,7 @@
 
 /*
  ~~~~~~~~~~~Class Notes~~~~~~~~~~~~~
- =
+push_back will apend a letter or number 
  
  */
 
